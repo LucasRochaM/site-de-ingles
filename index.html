@@ -8,9 +8,15 @@
 </head>
 <body>
     <div class="container">
+        <div class="hamburguer">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+        </div>
+        </div>
         <header>
             <div class="img-wrapper">
-                <img src="images/bg1.jpg" alt="">   
+                <img src="imagens/bg1.jpg" alt="">   
             </div>
             <div class="banner">
                 <h1>Planeta do Inglês</h1>
@@ -19,7 +25,163 @@
             </div>
             
         </header>
+        <section class="sessao-conhecimentos" id="conhecimentos">
+            <div class="sessao-header">
+              <h1>Sobre Mim</h1>
+            </div>
+            <div class="conhecimentos">
+              <div class="conhecimento">
+                <div class="conhecimento-header">
+                  <i class=""></i>
+                  <h3>Aulas</h3>
+                </div>
+                <div class="conhecimento-text">
+                  <p> escrever algo </p>
+                </div>
+              </div>
+              <div class="conhecimento">
+                <div class="conhecimento-header">
+                  <i class=""></i>
+                  <h3>Formação</h3>
+                </div>
+                <div class="conhecimento-text">
+                  <p>escrever algo</p>
+                </div>
+              </div>
+              <div class="conhecimento">
+                <div class="conhecimento-header">
+                  <i class=""></i>
+                  <h3>blablabla</h3>
+                </div>
+                <div class="conhecimento-text">
+                  <p>mais blablabla só que em baixo</p>
+                </div>
+              </div>
+              <div class="conhecimento">
+                <div class="conhecimento-header">
+                  <i class=""></i>
+                  <h3>outras coisas</h3>
+                </div>
+                <div class="conhecimento-text">
+                  <p>muito blablabla
+                  </p>
+                </div>
+              </div>
+              <div class="conhecimento">
+                <div class="conhecimento-header">
+                  <i class=""></i>
+                  <h3>lerolero</h3>
+                </div>
+                <div class="conhecimento-text">
+                  <p>já sabe né</p>
+                </div>
+              </div>
+              <div class="conhecimento">
+                <div class="conhecimento-header">
+                  <i class=""></i>
+                  <h3>escrever alguma coisa</h3>
+                </div>
+                <div class="conhecimento-text">
+                  <p>mais coisas</p>
+                </div>
+              </div>
+              <div class="conhecimentos-img-wrapper">
+                <img src="imagens/conhecimentos.png" alt="imagem conhecimento">
+              </div>
+            </div>
+          </section>
+  
+          <div class="sessao-projetos" id="projetos">
+            <div class="sessao-header">
+              <h1>Projetos</h1>
+            </div>
+            <div class="projetos">
+              <div class="card">
+                <div class="card-img-wrapper">
+                  <img src="imagens/proj1.jpg" alt="imagem do projeto ToDo" />
+                </div>
+                <div class="card-info">
+                  <h2>projeto 1</h2>
+                  <h3>subtitulo</h3>
+                  <p>fala sobre o projeto</p>
+                  <button class="btn">Saiba Mais</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img-wrapper">
+                  <img src="imagens/proj2.jpg" alt="projeto 2" />
+                </div>
+                <div class="card-info">
+                  <h2>projeto 2</h2>
+                  <h3>subtitulo</h3>
+                  <p>fala sobre o p2</p>
+                  <button class="btn">Saiba Mais</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img-wrapper">
+                  <img src="imagens/proj3.jpg" alt="projeto 3" />
+                </div>
+                <div class="card-info">
+                  <h2>projeto 3</h2>
+                  <h3>subtitulo</h3>
+                  <p>bla bla bla</p>
+                  <button class="btn">Saiba Mais</button>
+                </div>
+              </div>
+            </div>
+  
+          </section>
+  
+          <section class="sessao-contato" id="contato">
+            <div class="contato-wrapper">
+              <div class="contato-left"></div>
+              <div class="contato-right">
+                <h1>Contato</h1>
+                <h2>Telefone : </h2>
+                <h2>E-mail :</h2>
+              </div>
+            </div>
+          </section>
+  
+          
+          </section>
+  
+          <footer>
+            <div class="footer-content">
+              <p>
+                Copyright &copy; 2020, ETECIA DS - Todos os diretos reservados
+              </p>
+              <div class="social-list">
+                <ul>
+                  <li><a href="https://www.facebook.com/glauciazanettiingles"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="https://www.instagram.com/planetadoingles/"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </footer>
+          <a href="#home" id="link-topo">
+            <i class="fas fa-arrow-up"></i>
+          </a>
+          <a href="#top" class="glyphicon glyphicon-chevron-up"></a>
+      </div>
+     </body>
+  
+     <script src="script.js"
+    }<script>
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('a[href="#top"]').fadeIn();
+        } else {
+            $('a[href="#top"]').fadeOut();
+        }
+    });
 
-    </div>
-</body>
-</html>
+    $('a[href="#top"]').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
+});</script>
+  </html>
